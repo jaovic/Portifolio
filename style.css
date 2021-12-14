@@ -69,7 +69,7 @@ a:hover {
 .wrapper {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 70vw;
     height: 300px;
     margin: 50px auto;
     overflow-x: auto;
