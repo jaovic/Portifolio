@@ -2,6 +2,7 @@ body,
 ul {
   margin: 0px;
   padding: 0px;
+  font-family:'Nunito', sans-serif;
 }
 a {
   color: black;
