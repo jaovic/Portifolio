@@ -5,7 +5,7 @@ ul {
   font-family:'Nunito', sans-serif;
 }
 a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-family: sans-serif;
 }
@@ -30,7 +30,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #e7e7e7;
+  background: rgb(25, 74, 129);
 }
 
 #menu {
@@ -58,11 +58,8 @@ a:hover {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    overflow-x:scroll;
 }
-    -webkit-scrollbar { 
-        background: transparent; 
-    }
-
 .block {
     flex: none;
     width: calc(100%/3 - 20px);
@@ -72,6 +69,7 @@ a:hover {
     flex-direction: column;
     scroll-snap-align: start;
     pointer-events: none;
+    overflow-y: scroll;
     
 }
 
