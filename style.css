@@ -49,33 +49,19 @@ a:hover {
 
 /*//////////////////////////////////////////////////////////*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .wrapper {
     display: flex;
     flex-direction: row;
     width: 70vw;
-    height: 300px;
+    height: 320px;
     margin: 50px auto;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
+    -webkit-scrollbar { 
+        background: transparent; 
+    }
 
 .block {
     flex: none;
@@ -103,22 +89,6 @@ a:hover {
     padding: 15px;
     flex-grow: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contact{
     position: relative;
     padding: 50px 100px;
@@ -263,22 +233,7 @@ a:hover {
 
 /*//////////////////////////////////////////////////////////*/
 
-@media(max-width: 991px){
-    .contact{
-        padding: 50px;
-    }
-    .container{
-        flex-direction: column;
-    }
-    .container .contactInfo{
-        margin-bottom: 40px;
-    }
-    .container .contactInfo,
-    .contactForm{
-        width: 89%;
-    }
 
-}
 @media (max-width: 600px) {
   #menu {
     display: block;
@@ -337,4 +292,47 @@ a:hover {
     transform: rotate(-135deg);
     top: -7px;
   }
+}
+
+@media(max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm{
+        width: 89%;
+    }
+}
+@media (max-width: 768px){
+    .block {
+        width: calc(100%/2);
+    }
+    .block-img {
+        height: calc((100vw /2 - 20px) /2);
+    }
+}
+
+
+@media (max-width: 425px){
+    .block {
+        width: 100%;
+    }
+    .block-img {
+        height: calc((100vw - 20px) /2);
+    }
+}
+@media (max-width: 320px){
+    .block {
+        width: calc(100%);
+        margin: 10px 0;
+    }
+    .block-img {
+        height: calc(100vw /2);
+    }
 }
