@@ -48,11 +48,45 @@ a:hover {
 }
 
 /*//////////////////////////////////////////////////////////*/
+.dados{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    background: #00bcd4;
+    justify-content: center;
+    align-items: center;
+}
+.containerDados{
+    display: flex;
+}  
+.foto{
+    min-width: 100px;
+    max-width: 100px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:100px;
 
+}
+.foto img{
+    height: 100%;
+    object-fit: cover;
+}
+.descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-left: 30px;
+
+}
 .wrapper {
     display: flex;
     flex-direction: row;
-    width: 70vw;
+    width: 80%;
     height: auto;
     margin: 50px auto;
     overflow-x: auto;
@@ -62,7 +96,7 @@ a:hover {
 }
 .block {
     flex: none;
-    width: calc(100%/3);
+    width: calc(100%/3 - 19px);
     margin: 10px;
     box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
     display: flex;
@@ -230,13 +264,22 @@ a:hover {
 
 /*//////////////////////////////////////////////////////////*/
 
+@media (max-width: 760px) {
+    .containerDados{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dados{
+        height: auto;
+    }
 
+}
 @media (max-width: 600px) {
   #menu {
     display: block;
     position: absolute;
     width: 100%;
-    top: 70px;
+    top: 73px;
     right: 0px;
     background: #e7e7e7;
     transition: 0.6s;
