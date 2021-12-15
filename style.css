@@ -1,5 +1,5 @@
-body,
-ul {
+body, main,
+ul, p, h1 {
   margin: 0px;
   padding: 0px;
   font-family:'Nunito', sans-serif;
@@ -46,15 +46,20 @@ a:hover {
 #btn-mobile {
   display: none;
 }
-
+#experiencia{
+    padding: 0 8vw;
+}
 /*//////////////////////////////////////////////////////////*/
 .dados{
     width: 100%;
     height: 40vh;
     display: flex;
-    background: #00bcd4;
+    background: rgb(25,74,129);
+    background: linear-gradient(180deg, rgba(25,74,129,1) 0%, rgba(255,255,255,1) 100%);
     justify-content: center;
     align-items: center;
+    object-fit: cover;
+    
 }
 .containerDados{
     display: flex;
@@ -81,6 +86,9 @@ a:hover {
     align-items: center;
     padding: 10px;
     margin-left: 30px;
+    box-shadow: 0px 24px 3px -24px rgba(25,74,129,1);
+    
+    
 
 }
 .wrapper {
@@ -268,9 +276,13 @@ a:hover {
     .containerDados{
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
     .dados{
         height: auto;
+    }
+    .nome{
+        margin-bottom: 40px;
     }
 
 }
@@ -306,6 +318,7 @@ a:hover {
     background: none;
     cursor: pointer;
     gap: 0.5rem;
+    color: #fff;
   }
   #hamburger {
     border-top: 2px solid;
