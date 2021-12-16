@@ -130,7 +130,7 @@ a:hover {
 }
 .contact{
     position: relative;
-    padding: 50px 100px;
+    padding: 50px 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,6 +350,7 @@ a:hover {
 @media(max-width: 991px){
     .contact{
         padding: 50px;
+
     }
     .container{
         flex-direction: column;
